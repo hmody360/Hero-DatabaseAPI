@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/70c1e0c780.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Superhero Database</title>
+</head>
+
+<body>
+    <div class="contentContainer">
+        <h1 id="title">Hero Database:</h1>
+        <p>You can get a random hero, or search for one using ID or Name, make sure to select the corresponding Method, Have fun! </p>
+        <div class="searchContainer">
+            <label>Search by ID:</label>
+            <input type="text" id="idInput">
+            <Button id="idSearchBtn">Search</Button>
+            <button id="getRandomHero">Get Random Hero</button>
+        </div>
+        <div class="searchTypeContainer">
+            <form>
+                <input type="radio" name="searchType" id="byID" checked="true">
+                <label for="byID">Search using ID</label>
+                <input type="radio" name="searchType" id="byName">
+                <label for="byName">Search using Name</label>
+            </form>
+        </div>
+        <p id="error">You Have to Input an ID or Name!!!</p>
+        <div class="heroContainer">
+            <h5 id="heroName"></h5>
+            <div id="heroImage"></div>
+            <div id="heroPowerStats"></div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

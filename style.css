@@ -1,0 +1,36 @@
+:root {
+    --hero-info-margin: 20px 0px 10px 20px;
+}
+.contentContainer {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.searchContainer, .searchTypeContainer {
+    width: 600px;
+    padding: 10px;
+}
+.heroContainer {
+    width: 400px;
+    height: fit-content;
+    background: rgba(180,180,180,0.6);
+    border-radius: 10px;
+}
+#error {
+    color: red;
+    display: none;
+}
+#heroName {
+    margin: var(--hero-info-margin)
+}
+#heroImage img{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin-top: 10px;
+}
+#heroPowerStats {
+    margin: var(--hero-info-margin)
+}
